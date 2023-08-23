@@ -56,3 +56,12 @@ default layout:
       <empty>
 
 ```
+
+## Including external JARs
+
+- See also the [mps docs](https://www.jetbrains.com/help/mps/getting-the-dependencies-right.html#5ba1056f) and [this blog post](https://tomassetti.me/how-to-add-jars-and-resources-in-a-jetbrains-mps-project/#chapter2).
+  - But I've found the the error `No such path in local layout` still occured after adding the file to the layout.
+    - In my case it turned out, I needed to specify the path to the file exactly as the path to the jar in the dependencies of the solution.
+      - This path can be found by invoking the intention `Unfold <solution name>` on the solution and looking at the dependencies.
+      - In my case it was `$project_home/solution/some.solution/libs/some.jar` instead of `./solution/some.solution/libs/some.jar`.
+      - It seems to be necessary to specify the exact same path even though `$project_home = .` in my case.
