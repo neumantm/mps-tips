@@ -48,6 +48,7 @@ If you want to store the node as its actual node type (`node<MyConcept>`) within
 
 To be able to instantiate cells, you usually want to import the model `jetbrains.mps.nodeEditor.cells@java_stub`.
 I've found that the cells `EditorCell_Constant` and `EditorCell_RefPresentation` are particularly useful.
+Additionally, this technique can be used to create error cells, as described in [Error Cells](./errorCells.md).
 
 It is also possible to set the style on those cells:
 
