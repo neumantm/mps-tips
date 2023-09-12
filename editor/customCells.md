@@ -44,7 +44,7 @@ Then you can instantiate an anonymous subclass of `AbstractCellProvider`:
 ```
 Alternatively you can also create a named subclass of `AbstractCellProvider` in an util model and instantiate that.
 
-If you want to store the node as its actual node type (`node<MyConcept>`) within the Provider, you can also override the constructor with a typed argument, store in a typed class attribute and pass it down to the super constructor.
+If you want to store the node as its actual node type (`node<MyConcept>`) within the Provider, you can also override the constructor with a typed argument, store in a typed class attribute and pass it down to the super constructor. Alternatively, you can also store the node in a final attribute of the class (does not need constructor and therefore works in anonymous class).
 
 To be able to instantiate cells, you usually want to import the model `jetbrains.mps.nodeEditor.cells@java_stub`.
 I've found that the cells `EditorCell_Constant` and `EditorCell_RefPresentation` are particularly useful.
