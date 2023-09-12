@@ -7,3 +7,7 @@ This repository contains some tips and tricks around JetBrains MPS, which I miss
 ## Topics
 
 - [build-language](./build-language.md)
+
+### Editor
+
+- [Custom cells and Swing Components](./editor/customCells.md)
