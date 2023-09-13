@@ -30,6 +30,7 @@ The [javadoc] says the following:
    be still completely editable
 ```
 So if `false`, the cell will completely be replaced by the first character the user types, if `true` the content may be edited.
+See also [Custom Empty Cells](./customEmptyCells.md#error-cell) for more information on this behavior.
 
 Even though the cell is an error cell and also sets the internal error state to true,
 this does not cause an error during model check.

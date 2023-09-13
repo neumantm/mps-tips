@@ -12,3 +12,4 @@ This repository contains some tips and tricks around JetBrains MPS, which I miss
 
 - [Custom cells and Swing Components](./editor/customCells.md)
 - [Custom Error Cells](./editor/errorCells.md)
+- [Custom Empty Cells](./editor/customEmptyCells.md)
